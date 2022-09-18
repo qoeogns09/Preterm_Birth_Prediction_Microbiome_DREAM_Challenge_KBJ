@@ -16,7 +16,7 @@ ADD preterm/Models/model_5.save /model_code/
 
 ADD sv_cols.npy /model_code/
 
-ADD preterm/selected_features.npy /model_code/
+ADD preterm/use_features.npy /model_code/
 
 ADD run_model_preterm.py /model_code/
 
