@@ -16,7 +16,7 @@ ADD /early_preterm/Models/models_5.save /model_code/
 
 ADD /sv_cols.npy /model_code/
 
-ADD /early_preterm/selected_features.npy /model_code/
+ADD /early_preterm/use_features.npy /model_code/
 
 ADD run_model_early_preterm.py /model_code/
 
