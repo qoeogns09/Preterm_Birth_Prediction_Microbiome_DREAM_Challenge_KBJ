@@ -7,7 +7,8 @@ python: 3.7
 ```
 pip install -r requirements.txt
 ```
-data folder
+```
+data
 ├── alpha_diversity
 │   └── alpha_diversity.csv
 ├── community_state_types
@@ -38,7 +39,7 @@ data folder
     ├── taxonomy_relabd.family.csv
     ├── taxonomy_relabd.genus.csv
     └── taxonomy_relabd.species.csv
-
+```
 ## How to feature selection
 Simply run all cell in each notebook files
 
