@@ -53,6 +53,7 @@ Frist download baseline image
 docker pull docker.synapse.org/syn26133770/ptb-dream-example
 ```
 And make docker image for two tasks
+
 Task 1
 ```
 docker build -t preterm:v1 -f Dockerfile_preterm
