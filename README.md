@@ -54,11 +54,11 @@ docker pull docker.synapse.org/syn26133770/ptb-dream-example
 ```
 And make docker image for two tasks
 
-###Task 1
+### Task 1
 ```
 docker build -t preterm:v1 -f Dockerfile_preterm
 ```
-###Task 2
+### Task 2
 ```
 docker build -t early_preterm:v1 -f Dockerfile_early_preterm
 ```
