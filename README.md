@@ -7,8 +7,8 @@ python: 3.7
 ```
 pip install -r requirements.txt
 ```
-```
 Before implement these codes, you should download data. 
+```
 data
 ├── alpha_diversity
 │   └── alpha_diversity.csv
