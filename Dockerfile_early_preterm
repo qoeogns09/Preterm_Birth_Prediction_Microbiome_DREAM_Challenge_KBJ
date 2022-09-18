@@ -1,0 +1,23 @@
+FROM docker.synapse.org/syn26133770/ptb-dream-example:v2
+
+RUN make /input
+RUN make /output
+RUN make /model_code
+
+WORKDIR /model_code
+
+RUN pip3 install scikit-learn==0.23.1 pandas==1.0.5 lightgbm==2.3.1 xgboost==1.1.1
+
+ADD /early_preterm/Models/models_1.save /model_code/
+ADD /early_preterm/Models/models_2.save /model_code/
+ADD /early_preterm/Models/models_3.save /model_code/
+ADD /early_preterm/Models/models_4.save /model_code/
+ADD /early_preterm/Models/models_5.save /model_code/
+
+ADD /sv_cols.npy /model_code/
+
+ADD /early_preterm/selected_features.npy /model_code/
+
+ADD run_model_early_preterm.py /model_code/
+
+ENTRYPOINT ["python3", "/model_code/run_model_early_preterm.py"]
