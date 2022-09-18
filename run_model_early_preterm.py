@@ -115,7 +115,7 @@ def main():
     cols = np.load('sv_cols.npy')
     new_sv = sv_for_features(sv_counts, index, cols)
     
-    selected_features = np.load('selected_features.npy')
+    selected_features = np.load('use_features.npy')
 
     # input df
     meta = metadata[['specimen', 'participant_id']]
