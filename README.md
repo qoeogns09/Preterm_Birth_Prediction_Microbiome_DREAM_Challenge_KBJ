@@ -1,4 +1,4 @@
-# KBJ-preterm
+# Preterm Birth Prediction - Microbiome DREAM Challenge(KBJ)
 
 ## Overall Architecture
 
